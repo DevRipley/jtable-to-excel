@@ -38,7 +38,7 @@ try {
     exc = new ExportarExcel();
     exc.exportarExcel(table);  // 'table' es tu JTable con datos
 } catch (IOException ex) {
-    Notifications.getInstance().show(Notifications.Type.ERROR, "Error al guardar en Excel: " + ex);
+      JOptionPane.showMessageDialog(null, "Error al guardar en Excel: " + ex, "Error", JOptionPane.ERROR_MESSAGE);
 }
 ```
 
